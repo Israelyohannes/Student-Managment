@@ -1,0 +1,149 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #00121f;          /* Deep dark navy – ocean night */
+    color: #d9f2ff;                     /* Light cyan-white for text */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #0a1f2e;                /* Slightly lighter deep ocean */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid #1a3a55;          /* Subtle ocean border */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 500;
+    color: #a0d8ef;                     /* Light cyan-blue for labels */
+    font-size: 14px;
+}
+
+input {
+    padding: 12px 16px;
+    border: 1px solid #2a4b6a;
+    border-radius: 10px;
+    background-color: #0f2b3f;          /* Dark ocean input field */
+    color: #d9f2ff;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00c896;              /* Emerald focus */
+    box-shadow: 0 0 0 3px rgba(0, 200, 150, 0.25);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+#submitBtn {
+    background: #00c896;                /* Fresh emerald/turquoise */
+    color: #00121f;                     /* Dark text for contrast */
+}
+
+#submitBtn:hover {
+    background: #00b383;
+    transform: translateY(-1px);
+}
+
+#cancelBtn {
+    background: #2a4b6a;                /* Muted ocean gray-blue */
+    color: #d9f2ff;
+}
+
+#cancelBtn:hover {
+    background: #3a5b7a;
+}
+
+.action-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.edit-btn {
+    background: #4cc9f0;                /* Bright cyan for edit */
+    color: #00121f;
+}
+
+.edit-btn:hover {
+    background: #33b5e5;
+}
+
+.delete-btn {
+    background: #f15bb5;                /* Vibrant pink-purple for delete */
+    color: #ffffff;
+}
+
+.delete-btn:hover {
+    background: #d94fa8;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    background: #0f2b3f;                /* Dark ocean rows */
+    border: none;
+}
+
+th {
+    background: #001a33;
+    color: #8ac4ff;                     /* Soft blue-gray headers */
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+tr {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+tbody tr:hover {
+    background: #143c54;
+}
+
+/* Rounded corners on first and last cells */
+tbody tr td:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
